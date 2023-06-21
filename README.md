@@ -21,3 +21,10 @@ Dependencias de desarrollo necesarias:
 ```
 npm install -D @types/cors @types/express @types/morgan concurrently nodemon
 ```
+
+
+Para correr el proyecto hay que tener dos procesos corriendo simultaneamente:
+    Primero levantar el contenedor:
+    - docker-compose up 
+    Luego levantar el servidor en un terminal zsh:
+    - npm run start:dev
