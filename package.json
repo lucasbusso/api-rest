@@ -1,7 +1,7 @@
 {
   "name": "nodejs-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "API REST compleja con NodeJS utilizando como lenguage core `TypeScript` y `TypeORM` como ORM SQL.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,16 @@
     "start:dev": "tsc && concurrently \"tsc -w\" \"nodemon dist/server.js\"",
     "start:prod": "NODE_ENV=production && npm start"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasbusso/api-rest.git"
+  },
   "author": "Lucas Busso",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasbusso/api-rest/issues"
+  },
+  "homepage": "https://github.com/lucasbusso/api-rest#readme",
   "dependencies": {
     "class-validator": "^0.13.2",
     "cors": "^2.8.5",
