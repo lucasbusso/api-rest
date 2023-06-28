@@ -24,10 +24,6 @@ class ServerBootstrap extends ConfigServer {
         return [new UserRouter().router]
     }
 
-    async dbConnect(): Promise<Connection> {
-        return await createConnection(this.typeORMConfig);
-    }
-
     public listen() {
         this.app.listen(this.port, () => {
             console.log(`Server listening on port ${this.port}`);

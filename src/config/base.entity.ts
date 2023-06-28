@@ -4,12 +4,12 @@ export abstract class BaseEntity {
     @PrimaryGeneratedColumn("uuid")
     id!: string;
     @CreateDateColumn({
-        name: "created_ad",
+        name: "created_at",
         type: "timestamp",
     })
-    createdAd!: Date;
+    createdAt!: Date;
     @CreateDateColumn({
-        name: "updated_ad",
+        name: "updated_at",
         type: "timestamp",
     })
     updatedAt!: Date;
