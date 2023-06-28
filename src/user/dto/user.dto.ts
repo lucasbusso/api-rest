@@ -1,4 +1,4 @@
-import { IsNotEmpty } from "class-validator";
+import { IsNotEmpty, isNotEmpty } from "class-validator";
 import { BaseDTO } from "../../config/base.dto";
 
 export class UserDTO extends BaseDTO {
@@ -6,10 +6,13 @@ export class UserDTO extends BaseDTO {
     name!: string;
 
     @IsNotEmpty()
-    lastName!: string;
+    lastname!: string;
 
     @IsNotEmpty()
     username!: string;
+
+    @IsNotEmpty()
+    email!: string;
     
     @IsNotEmpty()
     password!: string;
