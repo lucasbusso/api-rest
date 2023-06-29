@@ -5,7 +5,7 @@ export class CategoryController {
   constructor(private readonly categoryService: CategoryService = new CategoryService()) {}
   async getCategories(req: Request, res: Response) {
     try {
-      const data = await this.categoryService.findAllCategoties();
+      const data = await this.categoryService.findAllCategories();
       res.status(200).json(data);
     } catch (e) {
       console.error(e);
