@@ -24,11 +24,18 @@ npm install -D @types/bcrypt @types/cors @types/express @types/morgan concurrent
 
 
 Para correr el proyecto hay que tener dos procesos corriendo simultaneamente:
-    Primero levantar el contenedor: 
-    - docker-compose up 
-    Luego levantar el servidor en un terminal zsh:
-    - npm run start:dev
-    Para generar la base de datos con migrations:
-    - npm run m:gen -- src/migrations/{name}
-    Para correr la migracion:
-    - npm run m:run
+```
+Primero levantar el contenedor:
+- docker-compose up
+```
+```
+Luego levantar el servidor en un terminal zsh:
+- npm run start:dev
+```
+```
+Para generar la base de datos con migrations (hay que hacerlo cada que borras el container):
+- npm run m:gen -- src/migrations/{name}
+```
+```
+Para correr la migracion:
+- npm run m:run
