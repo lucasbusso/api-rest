@@ -1,5 +1,5 @@
 # NodeJS con TypeScript y TypeORM
-API REST with relational database for 
+API REST with relational database for E-commerce web
 
 ## Tech details and stack:
 
