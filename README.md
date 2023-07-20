@@ -1,7 +1,7 @@
 # NodeJS con TypeScript y TypeORM
-API REST compleja con NodeJS utilizando como lenguage core `TypeScript` y `TypeORM` como ORM SQL.
+API REST with relational database for 
 
-## Tecnologias a aplicar:
+## Tech stack:
 
 - POO.
 - Docker Compose como base de datos.
@@ -10,13 +10,13 @@ API REST compleja con NodeJS utilizando como lenguage core `TypeScript` y `TypeO
 
 ## Lista de dependencias para instalacion:
 
-Dependencias necesarias:
+Dependencies used:
 
 ```
 npm install class-validator cors dotenv express morgan mysql typeorm typeorm-naming-strategies typescript
 ```
 
-Dependencias de desarrollo necesarias:
+Dev dependencies used:
 
 ```
 npm install -D @types/cors @types/express @types/morgan concurrently nodemon
@@ -24,7 +24,11 @@ npm install -D @types/cors @types/express @types/morgan concurrently nodemon
 
 
 Para correr el proyecto hay que tener dos procesos corriendo simultaneamente:
-    Primero levantar el contenedor:
+    Primero levantar el contenedor: 
     - docker-compose up 
     Luego levantar el servidor en un terminal zsh:
     - npm run start:dev
+    Para generar la base de datos con migrations:
+    - npm run m:gen -- src/migrations/{name}
+    Para correr la migracion:
+    - npm run m:run
