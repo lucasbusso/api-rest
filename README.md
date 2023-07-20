@@ -1,12 +1,12 @@
 # NodeJS con TypeScript y TypeORM
 API REST with relational database for 
 
-## Tech stack:
+## Tech details and stack:
 
 - POO.
-- Docker Compose como base de datos.
-- Configuracion de TypeScript.
-- Configuracion de rutas, controladores, servicios y entidades.
+- Docker Compose 
+- Typescript 
+- Routing, services, entities, controllers, interfaces, middlewares, dto's
 
 ## Dependencies installed:
 
