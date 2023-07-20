@@ -8,18 +8,18 @@ API REST with relational database for
 - Configuracion de TypeScript.
 - Configuracion de rutas, controladores, servicios y entidades.
 
-## Lista de dependencias para instalacion:
+## Dependencies installed:
 
 Dependencies used:
 
 ```
-npm install class-validator cors dotenv express morgan mysql typeorm typeorm-naming-strategies typescript
+npm install bcrypt class-validator cors dotenv express morgan mysql typeorm typeorm-naming-strategies typescript jsonwebtoken passport passport-jwt passport-local reflect-metadata
 ```
 
 Dev dependencies used:
 
 ```
-npm install -D @types/cors @types/express @types/morgan concurrently nodemon
+npm install -D @types/bcrypt @types/cors @types/express @types/morgan concurrently nodemon @types/passport-local @types/passport-jwt @types/jsonwebtoken
 ```
 
 
